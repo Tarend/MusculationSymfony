@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+
+<h1> Contact</h1>
+
+    <form method="post" action="traitement.php">
+        <p>
+            <label for="ameliorer">Comment pensez-vous que je pourrais améliorer mon site ?</label><br />
+            <textarea name="ameliorer" id="ameliorer"></textarea>
+        </p>
+    </form>
+
+    <button type="button" class="btn btn-primary">Envoyer</button>
+{% endblock %}

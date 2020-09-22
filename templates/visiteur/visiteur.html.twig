@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Personnages{% endblock %}
+{% block titrepage %} Liste des personnages {% endblock %}
+{% block body %}
+
+    <div class="container">
+        <table class="table">
+            <tr class="thead-dark">
+                <th>Image</th>
+                <th>Nom</th>
+                <th>Age</th>
+                <th>Sexe</th>
+                <th>Force</th>
+                <th>Agilité</th>
+                <th>Intelligence</th>
+
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+{% endblock %}
