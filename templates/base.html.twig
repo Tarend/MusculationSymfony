@@ -22,28 +22,31 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href={{ path('accueil') }}>Accueil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact">Contact</a>
+                <a class="nav-link" href={{ path('contact') }}>Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="prix">Abonnements</a>
+                <a class="nav-link" href={{ path('prix') }}>Abonnements</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="informations">Informations</a>
+                <a class="nav-link" href={{ path('informations') }}>Informations</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                   aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" href={{ path('app_register') }}>Inscription</a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link" href={{ path('app_login') }}>Connexion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href={{ path('app_articles_index') }}>Articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href={{ path('admin') }}>Administrateur</a>
+            </li>
+
+
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search">

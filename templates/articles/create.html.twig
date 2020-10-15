@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Admin aliments{% endblock %}
+{% block titrePage %}Création d'un aliment{% endblock %}
+
+{% block body %}
+
+    {{ include ('articles/_form.html.twig', {'submitButtonText' : 'Créer'}) }}
+
+{% endblock %}
